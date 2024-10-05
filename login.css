@@ -9,10 +9,10 @@ body{
     width: 930px;
 }
 
-/*------------ Right box ------------*/
+/*------------ Left box ------------*/
 
-.right-box{
-    padding: 40px 30px 40px 40px;
+.left-box{
+    padding: 40px 40px 40px 30px;
 }
 
 /*------------ Custom Placeholder ------------*/
@@ -60,11 +60,11 @@ body{
         margin: 0 10px;
 
      }
-     .left-box{
+     .right-box{
         height: 100px;
         overflow: hidden;
      }
-     .right-box{
+     .left-box{
         padding: 20px;
      }
 
