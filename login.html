@@ -21,74 +21,65 @@
 <body>
 
     <!----------------------- Main Container -------------------------->
-
-     <div class="container d-flex justify-content-center align-items-center min-vh-100">
-
-    <!----------------------- Login Container -------------------------->
-
-       <div class="row border rounded-5 p-3 bg-white shadow box-area">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row rounded-5 p-3 bg-white shadow box-area">
 
     <!--------------------------- Left Box ----------------------------->
-
-       <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box gradient-custom">
-           <!-- <p class="text-white fs-2 m-0">Be Verified</p> -->
-       </div> 
+            <div class="col-md-6 left-box">
+                <div class="row align-items-center">
+                    <div class="header-text mb-3 text-center">
+                        <h2>Welcome Back</h2>
+                        <p>We are happy to have you back.</p>
+                    </div>
+                    <form action="dashboard.html">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Email" required>
+                        </div>
+                        <div class="input-group mb-1">
+                            <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" required>
+                        </div>
+                        <div class="input-group mb-4 d-flex justify-content-between">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="formCheck">
+                                <label for="formCheck" class="form-check-label text-secondary"><span>Remember Me</span></label>
+                            </div>
+                            <div class="forgot">
+                                <span><a href="#" class="text-decoration-none">Forget Your Password?</a></span>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-lg btn-primary w-100 fs-6">Sign In</button>
+                        </div>
+                        <div class="input-group mb-1 justify-content-center">
+                            <span>or continue with</span>
+                        </div>
+                        <div class="input-group mb-3 justify-content-center">
+                            <div class="social-icons">
+                                <a href="#" class="btn btn-outline-primary rounded pr-2">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary rounded">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary rounded">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-primary rounded">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <span>Don't have an account? <a href="#" class="forgot text-decoration-none">Sign Up</a></span>
+                        </div>
+                    </form>  
+                </div>
+            </div> 
 
     <!-------------------- ------ Right Box ---------------------------->
-        
-       <div class="col-md-6 right-box">
-          <div class="row align-items-center">
-                <div class="header-text mb-3 text-center">
-                     <h2>Welcome Back</h2>
-                     <p>We are happy to have you back.</p>
-                </div>
-                <div class="input-group mb-3 justify-content-center">
-                    <div class="social-icons">
-                        <a href="#" class="btn btn-outline-primary rounded pr-2">
-                            <i class="fa-brands fa-google-plus-g"></i>
-                        </a>
-                        <a href="#" class="btn btn-outline-primary rounded">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="btn btn-outline-primary rounded">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="#" class="btn btn-outline-primary rounded">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="input-group mb-1 justify-content-center">
-                    <span>or use your email password</span>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Email">
-                </div>
-                <div class="input-group mb-1">
-                    <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
-                </div>
-                <div class="input-group mb-4 d-flex justify-content-around">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="formCheck">
-                        <label for="formCheck" class="form-check-label text-secondary"><span>Remember Me</span></label>
-                    </div>
-                    <div class="forgot">
-                        <span><a href="#" class="text-decoration-none">Forget Your Password?</a></span>
-                    </div>
-                </div>
-                <div class="input-group mb-3">
-                    <a href="dashboard.html" class="w-100">
-                        <button class="btn btn-lg btn-primary w-100 fs-6">Sign In</button>
-                    </a>
-                </div>
-                <div class="row text-center">
-                    <span>Don't have an account? <a href="#" class="text-decoration-none">Sign Up</a></span>
-                </div>
-          </div>
-       </div> 
-
-      </div>
+        <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column right-box gradient-custom">
+        </div> 
+        </div>
     </div>
 
 </body>
