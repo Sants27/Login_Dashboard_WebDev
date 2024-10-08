@@ -22,17 +22,21 @@
 
     <!----------------------- Main Container -------------------------->
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
-        <div class="row rounded-5 p-3 bg-white shadow box-area">
+        <div class="row rounded-5 bg-white shadow box-area">
 
-    <!--------------------------- Left Box ----------------------------->
-            <div class="col-md-6 left-box">
+    <!--------------------------- Left Box ---------------------------->
+            <div class="col-md-6 d-flex justify-content-center align-items-center flex-column left-box gradient-custom">
+            </div> 
+    
+    <!--------------------------- Right Box --------------------------->
+            <div class="col-md-6 right-box">
                 <div class="row align-items-center">
                     <div class="header-text mb-3 text-center">
                         <h2>Welcome Back</h2>
                         <p>We are happy to have you back.</p>
                     </div>
                     <form action="dashboard.html">
-                        <div class="input-group mb-3">
+                        <div class="input-group mb-2">
                             <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Email" required>
                         </div>
                         <div class="input-group mb-1">
@@ -70,15 +74,11 @@
                             </div>
                         </div>
                         <div class="row text-center">
-                            <span>Don't have an account? <a href="#" class="forgot text-decoration-none">Sign Up</a></span>
+                            <span>Don't have an account? <a href="signup.html" class="forgot text-decoration-none">Sign Up</a></span>
                         </div>
                     </form>  
                 </div>
             </div> 
-
-    <!-------------------- ------ Right Box ---------------------------->
-        <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column right-box gradient-custom">
-        </div> 
         </div>
     </div>
 
