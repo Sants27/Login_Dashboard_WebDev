@@ -1,15 +1,314 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Page</title>
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist\css\bootstrap.min.css">
+    <title>Sidebar With Bootstrap</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
-<body>
-    
 
-    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="bx bx-menu"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="#">BiraTrift</a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="dashboard.html" class="sidebar-link">
+                        <i class="bx bxs-grid-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                        <i class="bx bxs-shopping-bag"></i>
+                        <span>Products</span>
+                    </a>
+                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#multi-clothes" aria-expanded="false" aria-controls="multi-clothes">
+                                Clothes
+                            </a>
+                            <ul id="multi-clothes" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#multi">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">- Shirt</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">- Hoodie</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#multi-pants" aria-expanded="false" aria-controls="multi-pants">
+                                Pants
+                            </a>
+                            <ul id="multi-pants" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#multi">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">- Jeans</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">- Baggies</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bxs-food-menu"></i>
+                        <span>Orders</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bx-body"></i>
+                        <span>Customers</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bx bx-location-plus"></i>
+                        <span>Shipping</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="login.html" class="sidebar-link">
+                    <i class="bx bx-log-out"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-4 py-3">
+                <form action="#" class="d-none d-sm-inline-block">
+                    <div class="input-group input-group-navbar">
+                        <input type="text" class="form-control border-0 rounded-0" placeholder="Search...">
+                        <button class="btn border-0 rounded-0" type="button">
+                            Search
+                        </button>
+                    </div>
+                </form>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-icon pe-md-0" data-bs-toggle="dropdown">
+                                <img src="images/account.png" class="avatar img-fluid" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end rounded">
+                                <a href="#" class="dropdown-item">
+                                    <i class="lni lni-cog">
+                                        <span>Setting</span>
+                                    </i>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">
+                                    <i class="lni lni-question-circle">
+                                        <span>Analytics</span>
+                                    </i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-4">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h3 class="fw-bold fs-4 mb-3">Admin Dashboard</h3>
+                        <div class="row">
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="card flex-fill border-0 illustration">
+                                    <div class="card-body p-0 d-flex flex-fill">
+                                        <div class="row g-0 w-100">
+                                            <div class="col-6">
+                                                <div class="py-4 px-3">
+                                                    <h5 class="mb-2 fw-bold">Welcome Back, Admin</h5>
+                                                    <p class="mb-0">Admin Dashboard, Varrel</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-end">
+                                                <img src="images/customer-support.jpg" class="img-fluid rounded-end illustration-img" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="card flex-fill border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Total Earnings
+                                        </h5>
+                                        <p class="mb-2 fw-bold">
+                                            $ 128,230
+                                        </p>
+                                        <div class="mb-0">
+                                            <span class="badge text-success me-2">
+                                                -2.3%
+                                            </span>
+                                            <span class=" fw-bold">
+                                                Since Last Month
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-12 col-md-4 ">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Shirt Earnings
+                                        </h5>
+                                        <p class="mb-2 fw-bold">
+                                            $ 72,740
+                                        </p>
+                                        <div class="mb-0">
+                                            <span class="badge text-success me-2">
+                                                +3.0%
+                                            </span>
+                                            <span class=" fw-bold">
+                                                Since Last Month
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 ">
+                                <div class="card border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Hoodie Earnings
+                                        </h5>
+                                        <p class="mb-2 fw-bold">
+                                            $ 22.950
+                                        </p>
+                                        <div class="mb-0">
+                                            <span class="badge text-success me-2">
+                                                +0.7%
+                                            </span>
+                                            <span class="fw-bold">
+                                                Since Last Month
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 ">
+                                <div class="card  border-0">
+                                    <div class="card-body py-4">
+                                        <h5 class="mb-2 fw-bold">
+                                            Baggies Earnings
+                                        </h5>
+                                        <p class="mb-2 fw-bold">
+                                            $ 32,540
+                                        </p>
+                                        <div class="mb-0">
+                                            <span class="badge text-success me-2">
+                                                -5.0%
+                                            </span>
+                                            <span class="fw-bold">
+                                                Since Last Month
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <h3 class="fw-bold fs-4 my-3">Avg. Agent Earnings</h3>
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr class="highlight">
+                                            <th scope="col">No</th>
+                                            <th scope="col">Products</th>
+                                            <th scope="col">Categories</th>
+                                            <th scope="col">Quantity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Clothes</td>
+                                            <td>Shirt</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Clothes</td>
+                                            <td>Hoodie</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Pants</td>
+                                            <td>Baggies</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row text-body-secondary">
+                        <div class="col-6 text-start ">
+                            <a href=" #" class="text-body-secondary">
+                                <strong>BiraTrift</strong>
+                            </a>
+                        </div>
+                        <div class="col-6 text-end text-body-secondary d-none d-md-block">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a  href="#" class="text-body-secondary">Contact</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-body-secondary">About Us</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-body-secondary">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        const hamBurger = document.querySelector(".toggle-btn");
+
+        hamBurger.addEventListener("click", function () {
+        document.querySelector("#sidebar").classList.toggle("expand");
+        });
+    </script>
 </body>
+
 </html>
